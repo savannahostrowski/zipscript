@@ -6,7 +6,7 @@ def zipFiles():
 	for i in range(0, howMany):
 		filename = input('Please give me the location of the file: ')
 		filetoZip = os.path.abspath(filename)
-		print('Now zipping filetoZip')
+		print('Now zipping' filetoZip)
 		zf.write(filetoZip,os.path.basename(filetoZip))
 	print('All files have been zipped! Enjoy')
 	zf.close()
